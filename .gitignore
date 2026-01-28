@@ -1,0 +1,12 @@
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# Developer folders
+.vscode/
+.idea/
+.vscodium/
+
+# Extension packaging
+*.zip
+*.crx
