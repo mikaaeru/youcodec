@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <style>
+    body {
+      width: 250px;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 16px;
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .header-container {
+      margin-bottom: 16px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ff0000;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      font-size: 10px;
+      color: #777;
+      margin-top: 2px;
+      display: block;
+    }
+
+    .control-group { margin-bottom: 16px; }
+
+    .label {
+      display: block;
+      color: #aaa;
+      font-size: 11px;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #333;
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      margin-top: 12px;
+      cursor: pointer;
+    }
+    
+    .checkbox-row input[type="checkbox"] {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 3px;
+      margin-right: 10px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .checkbox-row input[type="checkbox"]:checked {
+      background-color: #ff0000;
+      border-color: #ff0000;
+    }
+    .checkbox-row input[type="checkbox"]:checked::after {
+      content: '\2714'; 
+      font-size: 10px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #save-msg {
+      color: #4caf50;
+      font-size: 11px;
+      text-align: center;
+      margin-top: 12px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <h3>YouCon Settings</h3>
+    <span class="subtitle">by michellesw v1.0</span>
+  </div>
+
+  <div class="control-group">
+    <span class="label">Preferred video codec:</span>
+    <select id="preferred_codec">
+      <option value="av1">AOMedia AV1</option>
+      <option value="vp9">Google VP9</option>
+      <option value="h264">AVC/H.264 (Compatibility)</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label class="checkbox-row">
+      <input type="checkbox" id="enable_hdr">
+      <span class="checkbox-label">Enable HDR</span>
+    </label>
+
+    <label class="checkbox-row">
+      <input type="checkbox" id="force_original">
+      <span class="checkbox-label">Force Original Audio</span>
+    </label>
+  </div>
+
+  <div id="save-msg">Preferences saved!</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
