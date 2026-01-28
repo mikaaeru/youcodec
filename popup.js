@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const defaults = {
-        preferred_codec: 'vp9', // vp9 is da best for older apple silicon macs
+        preferred_codec: 'vp9', // Assumming vp9 is da best for older apple silicon macs
         enable_hdr: false,
         force_original: true
     };

@@ -1,5 +1,5 @@
 # YouCodec
-**by mikaaeru v1.0**
+**by mikaaeru**
 
 A minimal YouTube extension to change streaming codecs, toggle HDR, and audio track selection.
 
