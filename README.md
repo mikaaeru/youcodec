@@ -15,6 +15,4 @@ A minimal YouTube extension to change streaming codecs, toggle HDR, and audio tr
 4. Click **Load Unpacked** and select the project folder.
 
 ## License
-This Source Code Form is subject to the terms of the **Mozilla Public License, v. 2.0**. If a copy of the MPL was not distributed with this file, You can obtain one at [https://mozilla.org/MPL/2.0/](https://mozilla.org/MPL/2.0/).
-
-See the [LICENSE](LICENSE) file for the full text.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
